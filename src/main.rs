@@ -4,9 +4,9 @@ fn main() {
     println!("Enter weight (kg): ");
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
-    let userWeight: f32 = input.trim().parse().unwrap();
+    let user_weight: f32 = input.trim().parse().unwrap();
     println!("Input: {}", input);
-    let mars_weight = calculate_our_weight_on_mars(userWeight);
+    let mars_weight = calculate_our_weight_on_mars(user_weight);
     println!("Weight on Mars: {}", mars_weight);
 }
 
